@@ -1,0 +1,65 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Reminder'
+  ClientHeight = 446
+  ClientWidth = 322
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object dateEdit: TDateEdit
+    Date = 45191.000000000000000000
+    Position.X = 80.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 161.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Style, FontColor]
+    TabOrder = 0
+    TextSettings.Font.Family = 'Acme'
+    TextSettings.Font.Size = 22.000000000000000000
+  end
+  object timeEdit: TTimeEdit
+    Time = 0.993974421296296300
+    Position.X = 80.000000000000000000
+    Position.Y = 128.000000000000000000
+    Size.Width = 161.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Style, FontColor]
+    TextSettings.Font.Family = 'Acme'
+    TextSettings.Font.Size = 24.000000000000000000
+    TabOrder = 1
+  end
+  object messageEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 2
+    TextSettings.Font.Family = 'Acme'
+    TextSettings.Font.Size = 24.000000000000000000
+    Position.X = 80.000000000000000000
+    Position.Y = 208.000000000000000000
+    Size.Width = 161.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Style, FontColor]
+  end
+  object setReminderButton: TButton
+    StyledSettings = [Style, FontColor]
+    Position.X = 80.000000000000000000
+    Position.Y = 288.000000000000000000
+    Size.Width = 161.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'Set Reminder'
+    TextSettings.Font.Family = 'Bangers'
+    TextSettings.Font.Size = 28.000000000000000000
+    OnClick = setReminderButtonClick
+  end
+  object timer: TTimer
+    OnTimer = timerTimer
+    Left = 272
+    Top = 360
+  end
+end
